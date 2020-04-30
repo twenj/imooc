@@ -1,0 +1,8 @@
+package com.imooc;
+
+public class CharDemo {
+	public static void main(String[] args) {
+		char ch = '\u005d';
+		System.out.println(ch);
+	}
+}

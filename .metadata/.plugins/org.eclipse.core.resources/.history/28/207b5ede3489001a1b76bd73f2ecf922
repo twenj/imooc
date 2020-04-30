@@ -1,0 +1,9 @@
+<?php
+
+class ProductController extends Yaf_Controller_Abstract
+{
+    public function viewAction() {
+        echo "111";
+    }
+}
+

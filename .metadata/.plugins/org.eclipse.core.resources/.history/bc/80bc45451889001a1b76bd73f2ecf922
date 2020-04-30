@@ -1,0 +1,10 @@
+<?php
+class IndexController extends Yaf_Controller_Abstract
+{
+    public function indexAction() {
+
+        var_dump(YAF_ERR_STARTUP_FAILED); exit;
+        // $this->_view->word = "Hello";
+        $this->getView()->assign('word', 'Hello');
+    }
+}

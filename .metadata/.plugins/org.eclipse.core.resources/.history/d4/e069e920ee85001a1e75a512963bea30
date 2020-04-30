@@ -1,0 +1,11 @@
+package com.imooc;
+
+public class HelloImooc {
+
+	public static void main(String[] args) {
+		
+		long n = 037L;
+		System.out.println(n);
+	}
+
+}

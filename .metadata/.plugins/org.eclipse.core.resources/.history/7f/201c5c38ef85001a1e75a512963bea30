@@ -1,0 +1,8 @@
+package com.imooc;
+
+public class FloatDemo {
+	public static void main(String[] args) {
+		float n = 123.456;
+		System.out.println(n);
+	}
+}

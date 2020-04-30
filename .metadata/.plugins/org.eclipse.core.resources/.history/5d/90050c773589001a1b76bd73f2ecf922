@@ -1,0 +1,11 @@
+<?php
+
+class ProductController extends Yaf_Controller_Abstract {
+    public function indexAction() {//默认Action
+        echo 111;exit;
+    }
+    
+    public function helloAction() {
+        $this->_view->content = "Hello yaf";
+    }
+}
