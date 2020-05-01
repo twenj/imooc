@@ -1,8 +1,0 @@
-<?php
-class Bootstrap extends Yaf_Bootstrap_Abstract{
-    public function _initPlugin(Yaf_Dispatcher $dispatcher) {
-        $user = new UserPlugin();
-        print_r($user);
-        // $dispatcher->registerPlugin($user);
-    }
-}

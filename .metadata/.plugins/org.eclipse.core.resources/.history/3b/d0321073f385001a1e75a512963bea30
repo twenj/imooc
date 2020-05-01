@@ -1,8 +1,0 @@
-package com.imooc;
-
-public class CharDemo {
-	public static void main(String[] args) {
-		char ch = 65534;
-		System.out.println(ch);
-	}
-}

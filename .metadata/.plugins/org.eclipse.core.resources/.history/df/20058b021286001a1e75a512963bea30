@@ -1,8 +1,0 @@
-package com.imooc;
-
-public class TypeExchange {
-	public static void main(String[] args) {
-		int n = 'a';
-		System.out.println(n);
-	}
-}
