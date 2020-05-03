@@ -1,9 +1,9 @@
 package com.imooc.animal;
 
 public class Animal {
-	private String name = "妮妮"; // 昵称
-	private int month = 2; // 月份
-	private String species = "动物"; // 品种
+	private String name; // 昵称
+	private int month; // 月份
+	private String species; // 品种
 	public int temp = 15;
 	
 	private static int st1 = 22;
@@ -22,6 +22,8 @@ public class Animal {
 	}
 	
 	public Animal(String name, int month) {
+		this.setName(name);
+		this.setMonth(month);
 		System.out.println("我是父类的带参构造方法");
 	}
 
@@ -54,4 +56,19 @@ public class Animal {
 		System.out.println(this.getName() + "在吃东西");
 	}
 	
+	// 重写 Object 方法的equals
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		Animal a = (Animal)obj;
+		if (this.getName().equals(a.getName()) && this.getMonth() == a.getMonth())
+			return true;
+		else 
+			return false;
+	}
+	
+	// 重写getString方法
+	public String toString() {
+		return "昵称：" + this.getName() + ";年龄：" + this.getMonth();
+	} 
 }
